@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    font-family: sans-serif;
+    background: beige;
+    font-size: medium;
+}
+
+.bar {
+    display: flex;
+    gap: 60px;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(209, 209, 178);
+}
+
+.bar ul {
+    padding: 10px;
+    display: flex;
+    gap: 60px;
+}
+
+.bar ul li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.bar ul li a:hover {
+    text-decoration: underline;
+    color: beige;
+}
+
+.first {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: emoji;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.left {
+    padding: 10px;
+    margin: 20px;
+}
+
+.left img {
+    border-radius: 500px;
+    width: 450px;
+    height: 450px;
+}
+
+.right {
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right p {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#element{
+    color: rgb(247, 198, 137);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.btn{
+    margin: 15px;
+    padding: 10px;
+    background: beige ;
+    border-radius: 10px;
+}
+
+.btn:hover{
+    text-decoration: underline;
+    color: rgb(247, 198, 137);
+}
+
+.margin{
+    border: 2px solid rgb(209, 209, 178);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 40px 84px;
+}
+
+.about{
+    padding: 40px;
+    margin: 30px;
+    font-size: 20px;
+}
+
+.t1{
+    padding: 20px;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: emoji;
+}
+
+.intro{
+    padding: 10px;
+}
+
+.intro p {
+    padding: 20px;
+}
+
+.education{
+    padding: 40px;
+    margin: 30px;
+}
+
+.line{
+    display: flex;
+    border-top: 2px solid rgb(209, 209, 178) ;
+    margin: 80px 20px;
+}
+
+.vertical-line{
+    width: 2px;
+    height: 90px;
+    background: rgb(209, 209, 178) ;
+    margin: 0px 217px;
+}
+
+.symbol{
+    height: 40px;
+    width: 40px;
+    position: relative;
+    top: -50px;
+    left: -20px;
+    border-radius: 50px;
+}
+
+.vertical-content{
+    width: 150px;
+    position: relative;
+    top: 54px;
+    left: -63px;
+}
+
+.skills{
+    padding: 40px;
+    margin: 30px;
+}
+.box{
+    margin: 80px 20px;
+    display: flex;
+    gap: 150px;
+    align-items: center;
+    flex-wrap: wrap;
+    left: 32px;
+    position: relative;
+}
+
+.box-content{
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+.box img{
+    width: 150px;
+    height: 150px;
+}
+
+.box-content:before{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background:black;
+}
+
+.box-content:before{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -2;
+    filter: blur(10px);
+    background: black;
+}
+
+.box-content:before,.box-cntent:after{
+    background: linear-gradient(235deg,pink,blue);
+}
+
+.projects{
+    padding: 40px;
+    margin: 30px;
+}
+
+.project1{
+    padding: 20px;
+    position: relative;
+    left: 25px;
+    display: flex;
+    gap: 50px;
+}
+
+.project-content{
+    padding: 20px;
+}
+
+.project-content p{
+    padding: 10px;
+}
+
+.contact{
+    padding: 40px;
+    margin: 30px;
+}
+
+.phone{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.email{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer{
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer ul li{
+    list-style: none;
+    padding: 5px;
+}
+
+.last{
+    padding: 40px;
+    margin: 30px;
+    text-align: center;
+}
+
+.footer ul li a:hover{
+    text-decoration: underline;
+    color: rgb(227, 227, 116);
+}
+@media (max-width: 1300px) {
+    .bar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .bar ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .left img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .right p, #element {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .margin {
+        margin: 20px 40px;
+    }
+
+    .about, .education, .skills, .projects, .contact {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .line {
+        flex-direction: column;
+        align-items: center;
+        margin: 40px 0;
+        gap: 20px;
+    }
+
+    .vertical-line {
+        display: flex;
+        gap: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    .vertical-line img{
+        left: 5px;
+        top: 2px;
+    }
+    .vertical-content{
+        position: relative;
+        top: 54px;
+        left: -63px;
+        justify-content: center;
+        display: flex;
+        width: 25%;
+    }
+
+    .box {
+        gap: 50px;
+    }
+
+    .project1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project1 img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .phone, .email {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .last {
+        font-size: 14px;
+    }
+}
+@media (max-width: 700px) {
+    .first {
+        font-size: 24px;
+    }
+
+    .right p, #element {
+        font-size: 20px;
+    }
+
+    .t1 {
+        font-size: 36px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+    .vertical-content{
+        width: 100%;
+    }
+
+    .box-content {
+        width: 100px;
+        height: 100px;
+    }
+
+    .project1 img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .phone, .email {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .phone img, .email img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .footer ul {
+        gap: 5px;
+    }
+}
